@@ -1,4 +1,4 @@
-# Passport To Prana API
+# Laravel API
 
 The API.
 
