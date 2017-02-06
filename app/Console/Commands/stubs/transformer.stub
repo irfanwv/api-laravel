@@ -1,0 +1,19 @@
+<?php
+
+namespace DummyNamespace;
+
+use League\Fractal\TransformerAbstract;
+
+class DummyClass extends TransformerAbstract
+{
+    protected $availableIncludes = [
+    ];
+
+    public function transform (DummyModel $DummyInstance)
+    {
+        $params = [
+        ];
+
+        return $params;
+    }
+}

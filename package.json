@@ -1,0 +1,12 @@
+{
+  "private": true,
+  "name": "engage",
+  "description": "engage",
+  "version": "0.0.1",
+  "scripts": {
+    "init": "npm install",
+    "install": "bower install",
+    "start": "node src/server/app.js",
+    "test": "gulp test"
+  }
+}

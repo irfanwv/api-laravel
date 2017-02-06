@@ -1,0 +1,28 @@
+<?php
+
+namespace DummyNamespace;
+
+class DummyClass
+{
+    protected $model;
+
+    public function __construct (DummyModel $DummyInstance)
+    {
+        $this->model = $DummyInstance;
+    }
+
+    public function find ($id)
+    {
+        return (new $this->model)->findOrFail ($id);
+    }
+
+    public function create ($params)
+    {
+        return (new $this->model)->fill ($params);
+    }
+
+    public function save (DummyModel $DummyInstance)
+    {
+        return $DummyInstance->save();
+    }
+}
